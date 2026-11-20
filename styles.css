@@ -174,7 +174,7 @@ h1, h2, h3 {
 .program { list-style: none; margin: 0; padding: 0; }
 .prog {
   display: grid;
-  grid-template-columns: 90px 1fr;
+  grid-template-columns: 118px 1fr;
   gap: 1.25rem;
   padding: 1.5rem 0;
   border-top: 1px solid var(--border);
@@ -289,5 +289,5 @@ h1, h2, h3 {
 /* ---------- Mobil ---------- */
 @media (max-width: 560px) {
   .nav > a:not(.btn) { display: none; }
-  .prog { grid-template-columns: 70px 1fr; gap: 0.9rem; }
+  .prog { grid-template-columns: 96px 1fr; gap: 0.9rem; }
 }
