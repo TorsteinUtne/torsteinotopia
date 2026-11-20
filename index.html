@@ -44,6 +44,26 @@
       </div>
     </section>
 
+    <!-- Arrangementet (hentet live fra Hoopla) -->
+    <section id="arrangementet" class="section">
+      <div class="section__head">
+        <p class="eyebrow">// Arrangementet</p>
+        <h2>Hentet direkte fra Hoopla.</h2>
+      </div>
+      <article id="event-box" class="event-box">
+        <span class="event-box__tag" data-ev="category">Konferanse</span>
+        <h3 class="event-box__name" data-ev="name">Torsteinotopia 50</h3>
+        <dl class="event-box__meta">
+          <div><dt>Dato</dt><dd data-ev="date">Lørdag 21. august 2027</dd></div>
+          <div><dt>Tid</dt><dd data-ev="time">Kl. 19:00</dd></div>
+          <div><dt>Sted</dt><dd data-ev="location">Skuteviksbodene 21, 5035 Bergen</dd></div>
+          <div><dt>Status</dt><dd class="event-box__avail" data-ev="availability">Ledige plasser</dd></div>
+        </dl>
+        <p class="event-box__desc" data-ev="description">Velkommen til Torsteinotopia 50 – konferansen der vi feirer 50 år med innovasjon, kreativitet og fellesskap!</p>
+        <a class="btn" href="pamelding.html">Meld deg på</a>
+      </article>
+    </section>
+
     <!-- Om konferansen -->
     <section id="om" class="section">
       <div class="section__head">
@@ -153,5 +173,60 @@
     <span class="logo logo--small">TORSTEINOTOPIA</span>
     <p>En kveld av og om Torstein, i anledning The Big 50 · Bergen 2027</p>
   </footer>
+
+  <!-- Henter eventinfo live fra Hoopla sitt åpne lese-API. Feiler kallet, beholdes innbakt tekst. -->
+  <script>
+    (async function () {
+      const EP = "https://api.hoopla.no/api/public/v3.0/organizations/torsteinotopia/events/1004404757";
+      const box = document.getElementById("event-box");
+      if (!box) return;
+      const set = (sel, val) => { const el = box.querySelector(sel); if (el && val) el.textContent = val; };
+      try {
+        const res = await fetch(EP, { headers: { Accept: "application/json" } });
+        if (!res.ok) return;
+        const ev = (await res.json()).event;
+        if (!ev) return;
+
+        set('[data-ev="name"]', ev.name);
+
+        const catMap = { CONFERENCE: "Konferanse", CONCERT: "Konsert", FESTIVAL: "Festival", PARTY: "Fest", SHOW: "Show", COURSE: "Kurs", SEMINAR: "Seminar", OTHER: "Arrangement" };
+        set('[data-ev="category"]', catMap[ev.data && ev.data.category] || "Arrangement");
+
+        if (ev.start) {
+          const d = new Date(ev.start);
+          const datoFmt = new Intl.DateTimeFormat("nb-NO", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Oslo" });
+          const tidFmt = new Intl.DateTimeFormat("nb-NO", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Oslo" });
+          let dato = datoFmt.format(d);
+          dato = dato.charAt(0).toUpperCase() + dato.slice(1);
+          set('[data-ev="date"]', dato);
+          set('[data-ev="time"]', "Kl. " + tidFmt.format(d));
+        }
+
+        const loc = ev.data && ev.data.location;
+        if (loc) {
+          const parts = [loc.street_address, [loc.postal_code, loc.postal_area].filter(Boolean).join(" ")].filter(Boolean);
+          if (parts.length) set('[data-ev="location"]', parts.join(", "));
+        }
+
+        const availMap = { MANY_LEFT: "Ledige plasser", SOME_LEFT: "Få plasser igjen", FEW_LEFT: "Få plasser igjen", SOLD_OUT: "Utsolgt", NONE_LEFT: "Utsolgt" };
+        set('[data-ev="availability"]', availMap[ev.data && ev.data.availability] || "Billetter tilgjengelig");
+
+        if (ev.description) {
+          let txt = ev.description.replace(/[#*_`>]/g, "").replace(/\s+/g, " ").trim();
+          txt = txt.replace(/^Torsteinotopia 50\s*/i, "").trim();
+          const sentence = txt.match(/^[\s\S]{60,}?[.!?](\s|$)/);
+          if (sentence) {
+            txt = sentence[0].trim();
+          } else if (txt.length > 210) {
+            txt = txt.slice(0, 200);
+            txt = txt.slice(0, txt.lastIndexOf(" ")).trim() + "…";
+          }
+          set('[data-ev="description"]', txt);
+        }
+      } catch (e) {
+        /* Nettverks-/API-feil: behold den innbakte teksten. */
+      }
+    })();
+  </script>
 </body>
 </html>
