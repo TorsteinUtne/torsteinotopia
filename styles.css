@@ -245,6 +245,15 @@ h1, h2, h3 {
 /* ---------- Billetter / påmelding ---------- */
 .tickets { min-height: 60vh; }
 .btn--block { display: block; width: 100%; text-align: center; }
+.ticketbox {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  max-width: 720px;
+}
+.ticketbox__frame { display: block; width: 100%; height: 800px; border: 0; }
+.tickets__fallback { color: var(--muted); margin-top: 1.25rem; }
 .ticketcard {
   background: var(--surface);
   border: 1px solid var(--border);
