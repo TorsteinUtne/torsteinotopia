@@ -8,8 +8,8 @@
   --border: #23271f;
   --text: #ffffff;
   --muted: #b1b1b1;
-  --accent: #22d3ee;        /* primær aksent – cyan */
-  --accent-soft: #a5f3fc;   /* lys cyan */
+  --accent: #00e5ff;        /* primær aksent – cyan */
+  --accent-soft: #8ff0ff;   /* lys cyan */
   --orange: #ffb280;    /* sekundær */
   --red: #ff4444;
   --maxw: 1080px;
@@ -70,7 +70,7 @@ h1, h2, h3 {
 .btn:hover {
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(34, 211, 238, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 229, 255, 0.35);
 }
 .btn--ghost {
   background: transparent;
@@ -127,8 +127,8 @@ h1, h2, h3 {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(34, 211, 238, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(34, 211, 238, 0.1) 1px, transparent 1px);
+    linear-gradient(rgba(0, 229, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 229, 255, 0.1) 1px, transparent 1px);
   background-size: 44px 44px;
   mask-image: radial-gradient(circle at 50% 30%, #000 0%, transparent 70%);
   -webkit-mask-image: radial-gradient(circle at 50% 30%, #000 0%, transparent 70%);
@@ -213,7 +213,7 @@ h1, h2, h3 {
 /* ---------- Påmelding ---------- */
 .signup {
   background:
-    radial-gradient(circle at 50% 0%, rgba(34, 211, 238, 0.14), transparent 60%),
+    radial-gradient(circle at 50% 0%, rgba(0, 229, 255, 0.14), transparent 60%),
     var(--bg-soft);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
