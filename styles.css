@@ -1,5 +1,5 @@
 /* Torsteinotopia — stilark
-   Inspirert av Volum: svart bakgrunn, cyan aksent, techy typografi. */
+   Inspirert av Volum: svart bakgrunn, klargrønn aksent, techy typografi. */
 
 :root {
   --bg: #000000;
@@ -8,8 +8,8 @@
   --border: #23271f;
   --text: #ffffff;
   --muted: #b1b1b1;
-  --accent: #00e5ff;        /* primær aksent – cyan */
-  --accent-soft: #8ff0ff;   /* lys cyan */
+  --accent: #73ff9d;        /* primær aksent – klargrønn */
+  --accent-soft: #b6ffcc;   /* lys grønn */
   --orange: #ffb280;    /* sekundær */
   --red: #ff4444;
   --maxw: 1080px;
@@ -57,7 +57,7 @@ h1, h2, h3 {
 .btn {
   display: inline-block;
   background: var(--accent);
-  color: #042024;
+  color: #04120a;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   padding: 0.85rem 1.5rem;
@@ -70,7 +70,7 @@ h1, h2, h3 {
 .btn:hover {
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 229, 255, 0.35);
+  box-shadow: 0 8px 24px rgba(115, 255, 157, 0.25);
 }
 .btn--ghost {
   background: transparent;
@@ -127,8 +127,8 @@ h1, h2, h3 {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(0, 229, 255, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 229, 255, 0.1) 1px, transparent 1px);
+    linear-gradient(rgba(115, 255, 157, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(115, 255, 157, 0.07) 1px, transparent 1px);
   background-size: 44px 44px;
   mask-image: radial-gradient(circle at 50% 30%, #000 0%, transparent 70%);
   -webkit-mask-image: radial-gradient(circle at 50% 30%, #000 0%, transparent 70%);
@@ -213,7 +213,7 @@ h1, h2, h3 {
 /* ---------- Påmelding ---------- */
 .signup {
   background:
-    radial-gradient(circle at 50% 0%, rgba(0, 229, 255, 0.14), transparent 60%),
+    radial-gradient(circle at 50% 0%, rgba(115, 255, 157, 0.1), transparent 60%),
     var(--bg-soft);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
