@@ -1,5 +1,5 @@
 /* Torsteinotopia — stilark
-   Inspirert av Volum: svart bakgrunn, signalblå aksent, techy typografi. */
+   Inspirert av Volum: svart bakgrunn, cyan aksent, techy typografi. */
 
 :root {
   --bg: #000000;
@@ -8,8 +8,8 @@
   --border: #23271f;
   --text: #ffffff;
   --muted: #b1b1b1;
-  --blue: #2563ff;      /* primær aksent – signalblå */
-  --sky: #8db2ff;       /* lys blå */
+  --accent: #22d3ee;        /* primær aksent – cyan */
+  --accent-soft: #a5f3fc;   /* lys cyan */
   --orange: #ffb280;    /* sekundær */
   --red: #ff4444;
   --maxw: 1080px;
@@ -31,7 +31,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--sky); text-decoration: none; }
+a { color: var(--accent-soft); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 h1, h2, h3 {
@@ -42,11 +42,11 @@ h1, h2, h3 {
   margin: 0;
 }
 
-.accent { color: var(--blue); }
+.accent { color: var(--accent); }
 
 .eyebrow {
   font-family: "Space Grotesk", monospace;
-  color: var(--blue);
+  color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.8rem;
@@ -56,8 +56,8 @@ h1, h2, h3 {
 /* ---------- Knapper ---------- */
 .btn {
   display: inline-block;
-  background: var(--blue);
-  color: #ffffff;
+  background: var(--accent);
+  color: #042024;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   padding: 0.85rem 1.5rem;
@@ -70,14 +70,14 @@ h1, h2, h3 {
 .btn:hover {
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(37, 99, 255, 0.35);
+  box-shadow: 0 8px 24px rgba(34, 211, 238, 0.35);
 }
 .btn--ghost {
   background: transparent;
   color: var(--text);
   border: 1px solid var(--border);
 }
-.btn--ghost:hover { border-color: var(--blue); box-shadow: none; }
+.btn--ghost:hover { border-color: var(--accent); box-shadow: none; }
 .btn--small { padding: 0.5rem 1rem; font-size: 0.9rem; }
 
 /* ---------- Topplinje ---------- */
@@ -100,11 +100,11 @@ h1, h2, h3 {
   font-size: 1.15rem;
   color: var(--text);
 }
-.logo:hover { text-decoration: none; color: var(--blue); }
+.logo:hover { text-decoration: none; color: var(--accent); }
 .logo--small { font-size: 1rem; }
 .nav { display: flex; align-items: center; gap: clamp(0.75rem, 2vw, 1.75rem); }
 .nav > a { color: var(--text); font-weight: 500; }
-.nav > a:hover { color: var(--blue); text-decoration: none; }
+.nav > a:hover { color: var(--accent); text-decoration: none; }
 
 /* ---------- Seksjoner ---------- */
 .section {
@@ -127,8 +127,8 @@ h1, h2, h3 {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(37, 99, 255, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(37, 99, 255, 0.1) 1px, transparent 1px);
+    linear-gradient(rgba(34, 211, 238, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.1) 1px, transparent 1px);
   background-size: 44px 44px;
   mask-image: radial-gradient(circle at 50% 30%, #000 0%, transparent 70%);
   -webkit-mask-image: radial-gradient(circle at 50% 30%, #000 0%, transparent 70%);
@@ -144,7 +144,7 @@ h1, h2, h3 {
   font-size: clamp(1.05rem, 2.5vw, 1.4rem);
   color: #e8e8e8;
 }
-.hero__tagline strong { color: var(--sky); font-weight: 600; }
+.hero__tagline strong { color: var(--accent-soft); font-weight: 600; }
 .hero__meta { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 2rem 0; }
 .chip {
   border: 1px solid var(--border);
@@ -165,7 +165,7 @@ h1, h2, h3 {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   font-size: clamp(2.2rem, 6vw, 3.25rem);
-  color: var(--blue);
+  color: var(--accent);
   line-height: 1;
 }
 .stat__label { color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; margin-top: 0.4rem; }
@@ -183,7 +183,7 @@ h1, h2, h3 {
 .prog__time {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
-  color: var(--blue);
+  color: var(--accent);
   font-size: 1.1rem;
   padding-top: 0.1rem;
 }
@@ -206,14 +206,14 @@ h1, h2, h3 {
   padding: 1.5rem;
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
-.card:hover { border-color: var(--blue); transform: translateY(-3px); }
+.card:hover { border-color: var(--accent); transform: translateY(-3px); }
 .card h3 { font-size: 1.15rem; margin-bottom: 0.6rem; }
 .card p { margin: 0; color: var(--muted); }
 
 /* ---------- Påmelding ---------- */
 .signup {
   background:
-    radial-gradient(circle at 50% 0%, rgba(37, 99, 255, 0.14), transparent 60%),
+    radial-gradient(circle at 50% 0%, rgba(34, 211, 238, 0.14), transparent 60%),
     var(--bg-soft);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -239,8 +239,8 @@ h1, h2, h3 {
   font-size: 1rem;
   font-family: inherit;
 }
-.signup__form input:focus { outline: none; border-color: var(--blue); }
-.signup__ok { color: var(--blue); margin-top: 1.25rem; }
+.signup__form input:focus { outline: none; border-color: var(--accent); }
+.signup__ok { color: var(--accent); margin-top: 1.25rem; }
 
 /* ---------- Footer ---------- */
 .footer {
