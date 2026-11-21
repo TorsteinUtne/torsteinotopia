@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="50">
+  <circle cx="50" cy="50" r="44" fill="none" stroke="#73ff9d" stroke-width="5"/>
+  <text x="50" y="64" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="40" fill="#73ff9d">50</text>
+</svg>

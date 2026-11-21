@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Torsteinotopia — merkevare</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{ --bg:#000; --green:#73ff9d; --mint:#b6ffcc; --orange:#ffb280; --red:#ff4444; --muted:#b1b1b1; --surface:#121512; --border:#23271f; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:#fff;font-family:Inter,system-ui,sans-serif;padding:clamp(1rem,4vw,3rem)}
+  h1,h2,h3{font-family:"Space Grotesk",sans-serif;letter-spacing:-.02em;margin:0}
+  .eyebrow{font-family:"Space Grotesk";color:var(--green);text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;margin:0 0 .5rem}
+  section{max-width:1000px;margin:0 auto 3.5rem}
+  .grid{display:grid;gap:1rem}
+  .panel{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:clamp(1.25rem,3vw,2rem);display:flex;align-items:center;justify-content:center;min-height:160px}
+  .label{color:var(--muted);font-size:.8rem;margin-top:.5rem;font-family:"Space Grotesk"}
+  .swatches{display:flex;flex-wrap:wrap;gap:1rem}
+  .sw{width:120px}
+  .chip{height:72px;border-radius:12px;border:1px solid var(--border)}
+  .icons{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:1rem}
+  .icons .panel{flex-direction:column;min-height:150px}
+  .icons svg{width:64px;height:64px}
+</style>
+</head>
+<body>
+
+<section>
+  <p class="eyebrow">// Merkevare</p>
+  <h1 style="font-size:clamp(1.8rem,5vw,2.6rem)">Torsteinotopia — logo &amp; grafiske elementer</h1>
+</section>
+
+<!-- PALETTE -->
+<section>
+  <h2 style="margin-bottom:1rem">Palett</h2>
+  <div class="swatches">
+    <div class="sw"><div class="chip" style="background:#73ff9d"></div><div class="label">Grønn · #73ff9d</div></div>
+    <div class="sw"><div class="chip" style="background:#b6ffcc"></div><div class="label">Mint · #b6ffcc</div></div>
+    <div class="sw"><div class="chip" style="background:#ffb280"></div><div class="label">Oransje · #ffb280</div></div>
+    <div class="sw"><div class="chip" style="background:#ff4444"></div><div class="label">Rød · #ff4444</div></div>
+    <div class="sw"><div class="chip" style="background:#000;border-color:#333"></div><div class="label">Svart · #000000</div></div>
+    <div class="sw"><div class="chip" style="background:#fff"></div><div class="label">Hvit · #ffffff</div></div>
+  </div>
+</section>
+
+<!-- PRIMARY EMBLEM -->
+<section>
+  <h2 style="margin-bottom:1rem">Emblem (bart-signatur)</h2>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+    <div>
+      <div class="panel">
+        <!-- Emblem: grønn ring, bart, 50 -->
+        <svg viewBox="0 0 200 200" width="150" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Torsteinotopia emblem">
+          <circle cx="100" cy="100" r="92" fill="none" stroke="#73ff9d" stroke-width="4"/>
+          <circle cx="100" cy="100" r="82" fill="none" stroke="#73ff9d" stroke-width="1" opacity=".4"/>
+          <!-- sparkles -->
+          <path d="M100 26 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 Z" fill="#b6ffcc"/>
+          <!-- mustache -->
+          <g fill="#73ff9d">
+            <path d="M100 96
+              C 92 86, 78 82, 64 85
+              C 52 87.5, 42 94, 33 90
+              C 24 86, 18 93, 23 101
+              C 30 112, 48 114, 62 107
+              C 72 102, 80 97, 90 99
+              C 95 100, 98 99, 100 102
+              C 102 99, 105 100, 110 99
+              C 120 97, 128 102, 138 107
+              C 152 114, 170 112, 177 101
+              C 182 93, 176 86, 167 90
+              C 158 94, 148 87.5, 136 85
+              C 122 82, 108 86, 100 96 Z"/>
+          </g>
+          <text x="100" y="150" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="34" fill="#fff" letter-spacing="2">50</text>
+        </svg>
+      </div>
+      <div class="label">Emblem — primær, på svart</div>
+    </div>
+    <div>
+      <div class="panel" style="background:#73ff9d">
+        <svg viewBox="0 0 200 200" width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="100" r="92" fill="none" stroke="#04120a" stroke-width="4"/>
+          <path d="M100 26 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 Z" fill="#04120a"/>
+          <g fill="#04120a">
+            <path d="M100 96 C 92 86, 78 82, 64 85 C 52 87.5, 42 94, 33 90 C 24 86, 18 93, 23 101 C 30 112, 48 114, 62 107 C 72 102, 80 97, 90 99 C 95 100, 98 99, 100 102 C 102 99, 105 100, 110 99 C 120 97, 128 102, 138 107 C 152 114, 170 112, 177 101 C 182 93, 176 86, 167 90 C 158 94, 148 87.5, 136 85 C 122 82, 108 86, 100 96 Z"/>
+          </g>
+          <text x="100" y="150" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="34" fill="#04120a" letter-spacing="2">50</text>
+        </svg>
+      </div>
+      <div class="label">Emblem — monokrom på grønt</div>
+    </div>
+  </div>
+</section>
+
+<!-- WORDMARK -->
+<section>
+  <h2 style="margin-bottom:1rem">Logo / wordmark</h2>
+  <div class="grid" style="grid-template-columns:1fr">
+    <div class="panel" style="justify-content:flex-start;min-height:120px">
+      <svg viewBox="0 0 520 90" width="100%" height="90" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Torsteinotopia 50">
+        <g transform="translate(45,45)">
+          <circle cx="0" cy="0" r="40" fill="none" stroke="#73ff9d" stroke-width="3"/>
+          <g fill="#73ff9d" transform="translate(0,2) scale(.42)">
+            <path d="M0 -6 C -8 -16, -22 -20, -36 -17 C -48 -14.5, -58 -8, -67 -12 C -76 -16, -82 -9, -77 -1 C -70 10, -52 12, -38 5 C -28 0, -20 -5, -10 -3 C -5 -2, -2 -3, 0 0 C 2 -3, 5 -2, 10 -3 C 20 -5, 28 0, 38 5 C 52 12, 70 10, 77 -1 C 82 -9, 76 -16, 67 -12 C 58 -8, 48 -14.5, 36 -17 C 22 -20, 8 -16, 0 -6 Z"/>
+          </g>
+          <path d="M0 -30 l2.2 6 6 2.2 -6 2.2 -2.2 6 -2.2 -6 -6 -2.2 6 -2.2 Z" fill="#b6ffcc"/>
+        </g>
+        <text x="100" y="47" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="30" letter-spacing="-.5" fill="#fff">TORSTEIN<tspan fill="#73ff9d">OTOPIA</tspan></text>
+        <text x="100" y="72" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="13" letter-spacing="3" fill="#ffb280">THE BIG 50 · BERGEN 2027</text>
+      </svg>
+    </div>
+    <div class="panel" style="min-height:90px">
+      <svg viewBox="0 0 420 44" width="100%" height="44" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Torsteinotopia 50 horisontal">
+        <text x="0" y="33" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="30" letter-spacing="-.5" fill="#fff">TORSTEIN<tspan fill="#73ff9d">OTOPIA</tspan></text>
+        <g transform="translate(355,10)" fill="#73ff9d">
+          <path d="M0 10 C -5 4, -14 1, -23 3 C -31 5, -37 9, -43 6 C -49 3.5, -53 8, -49 13 C -45 20, -33 21, -24 16 C -18 13, -13 10, -6 11 C -3 11.5, -1 11, 0 13 C 1 11, 3 11.5, 6 11 C 13 10, 18 13, 24 16 C 33 21, 45 20, 49 13 C 53 8, 49 3.5, 43 6 C 37 9, 31 5, 23 3 C 14 1, 5 4, 0 10 Z" transform="translate(23,0)"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ICON / MOTIF SET -->
+<section>
+  <h2 style="margin-bottom:1rem">Grafiske elementer</h2>
+  <div class="icons">
+    <div class="panel">
+      <!-- mustache -->
+      <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg"><g fill="#73ff9d"><path d="M60 24 C 52 14, 38 10, 24 13 C 12 15.5, 2 22, -7 18" transform="translate(7,0)"/><path d="M60 24 C 52 14, 38 10, 24 13 C 14 15, 6 20, 0 18 C -6 16, -10 22, -5 28 C 2 39, 20 41, 34 34 C 44 29, 52 24, 60 26 C 68 24, 76 29, 86 34 C 100 41, 118 39, 125 28 C 130 22, 126 16, 120 18 C 114 20, 106 15, 96 13 C 82 10, 68 14, 60 24 Z"/></g></svg>
+      <div class="label">Bart</div>
+    </div>
+    <div class="panel">
+      <!-- sparkle -->
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 6 C 55 38, 62 45, 94 50 C 62 55, 55 62, 50 94 C 45 62, 38 55, 6 50 C 38 45, 45 38, 50 6 Z" fill="#b6ffcc"/></svg>
+      <div class="label">Gnist</div>
+    </div>
+    <div class="panel">
+      <!-- planet / orbit (utopia) -->
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="26" fill="none" stroke="#73ff9d" stroke-width="5"/><ellipse cx="50" cy="50" rx="46" ry="16" fill="none" stroke="#ffb280" stroke-width="4" transform="rotate(-25 50 50)"/></svg>
+      <div class="label">Planet / utopi</div>
+    </div>
+    <div class="panel">
+      <!-- soundwave -->
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="#73ff9d"><rect x="10" y="42" width="10" height="16" rx="5"/><rect x="28" y="30" width="10" height="40" rx="5"/><rect x="46" y="18" width="10" height="64" rx="5"/><rect x="64" y="34" width="10" height="32" rx="5"/><rect x="82" y="44" width="10" height="12" rx="5"/></g></svg>
+      <div class="label">Lydbølge</div>
+    </div>
+    <div class="panel">
+      <!-- confetti -->
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g><rect x="18" y="20" width="12" height="12" rx="2" fill="#73ff9d" transform="rotate(20 24 26)"/><rect x="66" y="16" width="10" height="10" rx="2" fill="#ffb280" transform="rotate(-15 71 21)"/><circle cx="80" cy="54" r="6" fill="#b6ffcc"/><rect x="24" y="60" width="11" height="11" rx="2" fill="#ff4444" transform="rotate(35 29 65)"/><circle cx="52" cy="40" r="5" fill="#ffb280"/><rect x="58" y="70" width="10" height="10" rx="2" fill="#73ff9d" transform="rotate(-25 63 75)"/></g></svg>
+      <div class="label">Konfetti</div>
+    </div>
+    <div class="panel">
+      <!-- dot grid -->
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="#73ff9d">
+        <circle cx="20" cy="20" r="5"/><circle cx="50" cy="20" r="5"/><circle cx="80" cy="20" r="5"/>
+        <circle cx="20" cy="50" r="5"/><circle cx="50" cy="50" r="5"/><circle cx="80" cy="50" r="5"/>
+        <circle cx="20" cy="80" r="5"/><circle cx="50" cy="80" r="5"/><circle cx="80" cy="80" r="5"/>
+      </g></svg>
+      <div class="label">Prikkrutenett</div>
+    </div>
+    <div class="panel">
+      <!-- 50 badge -->
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="44" fill="none" stroke="#73ff9d" stroke-width="5"/><text x="50" y="64" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="40" fill="#73ff9d">50</text></svg>
+      <div class="label">50-merke</div>
+    </div>
+    <div class="panel">
+      <!-- star burst / asterisk -->
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g stroke="#ffb280" stroke-width="7" stroke-linecap="round"><line x1="50" y1="14" x2="50" y2="86"/><line x1="18" y1="32" x2="82" y2="68"/><line x1="82" y1="32" x2="18" y2="68"/></g></svg>
+      <div class="label">Asterisk</div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER ELEMENT -->
+<section>
+  <h2 style="margin-bottom:1rem">Banner-element</h2>
+  <div class="panel" style="padding:0;overflow:hidden">
+    <svg viewBox="0 0 1000 160" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1000" height="160" fill="#000"/>
+      <g opacity=".5" fill="#73ff9d">
+        <circle cx="40" cy="30" r="3"/><circle cx="80" cy="30" r="3"/><circle cx="120" cy="30" r="3"/><circle cx="40" cy="70" r="3"/><circle cx="80" cy="70" r="3"/>
+        <circle cx="920" cy="130" r="3"/><circle cx="960" cy="130" r="3"/><circle cx="920" cy="90" r="3"/>
+      </g>
+      <path d="M500 54 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 Z" fill="#b6ffcc"/>
+      <g fill="#73ff9d" transform="translate(500,96)"><path d="M0 0 C -8 -10, -22 -14, -36 -11 C -48 -8.5, -58 -2, -67 -6 C -76 -10, -82 -3, -77 5 C -70 16, -52 18, -38 11 C -28 6, -20 1, -10 3 C -5 4, -2 3, 0 6 C 2 3, 5 4, 10 3 C 20 1, 28 6, 38 11 C 52 18, 70 16, 77 5 C 82 -3, 76 -10, 67 -6 C 58 -2, 48 -8.5, 36 -11 C 22 -14, 8 -10, 0 0 Z"/></g>
+      <text x="500" y="150" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="22" letter-spacing="6" fill="#ffb280">TORSTEINOTOPIA 50</text>
+    </svg>
+  </div>
+</section>
+
+</body>
+</html>

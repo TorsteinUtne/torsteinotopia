@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="Konfetti">
+  <rect x="18" y="20" width="12" height="12" rx="2" fill="#73ff9d" transform="rotate(20 24 26)"/>
+  <rect x="66" y="16" width="10" height="10" rx="2" fill="#ffb280" transform="rotate(-15 71 21)"/>
+  <circle cx="80" cy="54" r="6" fill="#b6ffcc"/>
+  <rect x="24" y="60" width="11" height="11" rx="2" fill="#ff4444" transform="rotate(35 29 65)"/>
+  <circle cx="52" cy="40" r="5" fill="#ffb280"/>
+  <rect x="58" y="70" width="10" height="10" rx="2" fill="#73ff9d" transform="rotate(-25 63 75)"/>
+</svg>

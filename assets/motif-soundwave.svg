@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="Lydbølge">
+  <g fill="#73ff9d">
+    <rect x="10" y="42" width="10" height="16" rx="5"/>
+    <rect x="28" y="30" width="10" height="40" rx="5"/>
+    <rect x="46" y="18" width="10" height="64" rx="5"/>
+    <rect x="64" y="34" width="10" height="32" rx="5"/>
+    <rect x="82" y="44" width="10" height="12" rx="5"/>
+  </g>
+</svg>

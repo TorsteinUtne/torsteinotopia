@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 90" width="520" height="90" role="img" aria-label="Torsteinotopia 50">
+  <g transform="translate(45,45)">
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#73ff9d" stroke-width="3"/>
+    <g fill="#73ff9d" transform="translate(0,2) scale(.42)">
+      <path d="M0 -6 C -8 -16, -22 -20, -36 -17 C -48 -14.5, -58 -8, -67 -12 C -76 -16, -82 -9, -77 -1 C -70 10, -52 12, -38 5 C -28 0, -20 -5, -10 -3 C -5 -2, -2 -3, 0 0 C 2 -3, 5 -2, 10 -3 C 20 -5, 28 0, 38 5 C 52 12, 70 10, 77 -1 C 82 -9, 76 -16, 67 -12 C 58 -8, 48 -14.5, 36 -17 C 22 -20, 8 -16, 0 -6 Z"/>
+    </g>
+    <path d="M0 -30 l2.2 6 6 2.2 -6 2.2 -2.2 6 -2.2 -6 -6 -2.2 6 -2.2 Z" fill="#b6ffcc"/>
+  </g>
+  <text x="100" y="47" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="30" letter-spacing="-.5" fill="#ffffff">TORSTEIN<tspan fill="#73ff9d">OTOPIA</tspan></text>
+  <text x="100" y="72" font-family="'Space Grotesk', sans-serif" font-weight="500" font-size="13" letter-spacing="3" fill="#ffb280">THE BIG 50 · BERGEN 2027</text>
+</svg>

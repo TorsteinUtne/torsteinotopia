@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 44" width="420" height="44" role="img" aria-label="Torsteinotopia 50">
+  <text x="0" y="33" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="30" letter-spacing="-.5" fill="#ffffff">TORSTEIN<tspan fill="#73ff9d">OTOPIA</tspan></text>
+  <g transform="translate(355,10)" fill="#73ff9d">
+    <path transform="translate(23,0)" d="M0 10 C -5 4, -14 1, -23 3 C -31 5, -37 9, -43 6 C -49 3.5, -53 8, -49 13 C -45 20, -33 21, -24 16 C -18 13, -13 10, -6 11 C -3 11.5, -1 11, 0 13 C 1 11, 3 11.5, 6 11 C 13 10, 18 13, 24 16 C 33 21, 45 20, 49 13 C 53 8, 49 3.5, 43 6 C 37 9, 31 5, 23 3 C 14 1, 5 4, 0 10 Z"/>
+  </g>
+</svg>

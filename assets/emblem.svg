@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Torsteinotopia 50 emblem">
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#73ff9d" stroke-width="4"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#73ff9d" stroke-width="1" opacity=".4"/>
+  <path d="M100 26 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 Z" fill="#b6ffcc"/>
+  <path fill="#73ff9d" d="M100 96 C 92 86, 78 82, 64 85 C 52 87.5, 42 94, 33 90 C 24 86, 18 93, 23 101 C 30 112, 48 114, 62 107 C 72 102, 80 97, 90 99 C 95 100, 98 99, 100 102 C 102 99, 105 100, 110 99 C 120 97, 128 102, 138 107 C 152 114, 170 112, 177 101 C 182 93, 176 86, 167 90 C 158 94, 148 87.5, 136 85 C 122 82, 108 86, 100 96 Z"/>
+  <text x="100" y="150" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="34" fill="#ffffff" letter-spacing="2">50</text>
+</svg>

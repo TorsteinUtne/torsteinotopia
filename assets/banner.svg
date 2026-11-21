@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 160" width="1000" height="160" role="img" aria-label="Torsteinotopia 50 banner">
+  <rect width="1000" height="160" fill="#000000"/>
+  <g opacity=".5" fill="#73ff9d">
+    <circle cx="40" cy="30" r="3"/><circle cx="80" cy="30" r="3"/><circle cx="120" cy="30" r="3"/><circle cx="40" cy="70" r="3"/><circle cx="80" cy="70" r="3"/>
+    <circle cx="920" cy="130" r="3"/><circle cx="960" cy="130" r="3"/><circle cx="920" cy="90" r="3"/>
+  </g>
+  <path d="M500 54 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 Z" fill="#b6ffcc"/>
+  <g fill="#73ff9d" transform="translate(500,96)">
+    <path d="M0 0 C -8 -10, -22 -14, -36 -11 C -48 -8.5, -58 -2, -67 -6 C -76 -10, -82 -3, -77 5 C -70 16, -52 18, -38 11 C -28 6, -20 1, -10 3 C -5 4, -2 3, 0 6 C 2 3, 5 4, 10 3 C 20 1, 28 6, 38 11 C 52 18, 70 16, 77 5 C 82 -3, 76 -10, 67 -6 C 58 -2, 48 -8.5, 36 -11 C 22 -14, 8 -10, 0 0 Z"/>
+  </g>
+  <text x="500" y="150" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="22" letter-spacing="6" fill="#ffb280">TORSTEINOTOPIA 50</text>
+</svg>
